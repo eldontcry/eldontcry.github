@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: purple; /* Mengubah warna latar belakang menjadi ungu */
+        color: white; /* Mengubah warna teks menjadi putih agar terlihat jelas di latar belakang ungu */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>besok keluar ayooo
+    </h1>
+    <iframe
+      src="https://giphy.com/embed/xUOwFZmWUC2QDHKu4M"
+      width="400"
+      height="400"
+      frameborder="0"
+      class="giphy-embed"
+      allowfullscreen
+    ></iframe>
+    <h1>bolehh kan?</h1>
+    <button id="btn_mau" onclick="alert('okeii sayangg')">ok mau</button>&nbsp;
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+      tidak
+    </button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
